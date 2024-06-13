@@ -1,0 +1,68 @@
+body {
+  background-color: rgb(
+    74,
+    109,
+    136
+  ); /* For browsers that do not support gradients */
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(198, 205, 215),
+    rgb(74, 109, 136)
+  );
+  text-align: center;
+  font-size: 150%;
+}
+
+h1 {
+  margin-bottom: 10px;
+  margin-top: 60px;
+  font-family: 'Spicy Rice', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 250%;
+  color: rgb(1, 12, 30);
+}
+
+h2 {
+  margin-bottom: 33px;
+  margin-top: 10px;
+  font-family: 'Spicy Rice', serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(1, 12, 30);
+}
+
+h3 {
+  margin-bottom: 33px;
+  margin-top: 10px;
+  font-family: 'Spicy Rice', serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(1, 12, 30);
+}
+
+p {
+  font-family: 'Dosis', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  margin: 50px;
+}
+
+.button {
+  background-color: rgb(74, 109, 136);
+  border: 2px solid #000000;
+  color: rgb(0, 30, 56);
+  padding: 20px 66px 20px 66px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+  font-family: 'Spicy Rice', serif;
+}
+.button:hover {
+  background-color: rgb(30, 30, 56);
+  color: white;
+}
