@@ -46,16 +46,21 @@ nav {
   }
 }
 
-ul {
+#pleaselist {
   list-style-type: none;
   margin: 40;
   margin-right: 100;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: none;
   justify-content: center;
   gap: 25px;
   font-weight: 700;
+}
+
+ul {
+  font-family: 'Dosis', sans-serif;
+  padding-left: 75px;
 }
 
 a {
@@ -166,8 +171,14 @@ p {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+    font-size: large;
     margin-left: 6px;
     margin-right: 6px;
+  }
+  ul {
+    font-family: 'Dosis', sans-serif;
+    padding-left: 75px;
+    font-size: large;
   }
 }
 
