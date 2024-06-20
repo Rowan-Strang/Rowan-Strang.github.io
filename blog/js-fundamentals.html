@@ -1,0 +1,207 @@
+<html lang="en">
+  <head>
+        <!-- p TITLE -->
+    <title>js-fundamentals.html</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles/main.css" type="text/css" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- h1 Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap"
+      rel="stylesheet"
+    />
+    <!-- p Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="container">
+    <nav>
+    <div class="nav-logo">
+        <a href="./index.html">
+        <img src="../images/cogwheel.png" alt="logo"></a>
+      </div>
+      <div>
+        <ul id="pleaselist">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="te-houtaewa-template.html">Te Houtaewa</a></li>
+          <li><a class="active" href="#">Tech</a></li>
+        </ul>
+      </div>
+    </nav>
+
+<!-- Heading -->
+
+    <div class="header-Desktop">
+      <h1>Java Script Fundamentals</h1>
+    </div>
+    <div class="header-Mobile">
+      <h1>Java Script Fundamentals</h1>
+      <h2>Mobile Edition</h2>
+    </div>
+
+    <!-- Actual Blog -->
+
+    <div class="columnLayout">
+      <h2>
+        JavaScript and its relationship to HTML and CSS
+      </h2>
+
+      <p>
+        I want you to imagine two things: a <b>dead body</b> and a <b>rock concert</b> <br> <br>
+        
+        Now let’s talk about HTML. <br> <br>
+        
+        In literal terms, on a web page, there is content—words, images, and stuff you see. This is HTML.
+        
+        This content looks pretty dry all on its own, downright horrible, even.
+        
+        So, let’s call HTML a dead body, or perhaps your favorite band playing a great setlist. <br> <br>
+        
+        Now, onto CSS. <br> <br>
+        
+        CSS deals with that dry, crusty HTML by adding colors, fonts, and other good stuff —that’s the styling.
+        
+        Pretty much anything you can imagine about how the page should look is handled by CSS.
+        
+        CSS is like when a funeral home does the hair and makeup of the deceased. It looks a lot nicer, but still not a lot of function.
+        
+        Or, we can consider that CSS is like the outfits, lighting, AV, and choice of venue for a rock concert. The content is the same, but now it’s dressed up and ready to impress. <br> <br>
+        
+        However, the webpage is still the same every time; the dead body doesn’t do anything and the concert is not unique. It’s the same with or without the audience. <br> <br>
+        
+        JavaScript changes all of this. <br> <br>
+        
+        JavaScript is like turning that dead body into a marionette puppet, like the lead singer of the band crowd surfing. It’s designing a web page that doesn’t just look the way the creator wants but any way the user wants. <br> <br>
+        
+        JavaScript powers <b>functionality, customization, personalization, and interactivity</b> by being able to dynamically modify the HTML and CSS.   <br><br><br>
+      </p>
+      
+        <h2>
+          Control Flow and Loops
+        </h2>
+  
+        <p>
+          In programming, control flow is like the order of steps that tell a program what to do next.
+
+          <br><br>However control flow can be a lot more powerful and complex than just an ordered list of steps.
+          
+          <br><br>Every morning I start by drinking coffee.
+          
+          <br>
+          <br>My first step is to determine if anyone else has made coffee yet, or if I need to make the first brew.
+          
+          This is an IF conditional, which is like a fork in the road or a switch on a railway track.
+          
+          This makes the code to operate in more than one possible way depending on other variable elements.
+          
+          <br><br>In the coffee scenario, IF someone has already made coffee, then I don’t need to go any further; I can simply drink the existing coffee.
+          
+          But if no one has made the coffee, then I will need to make that darn coffee.
+          
+          <br><br>In JavaScript, that might be represented like this: 
+        </p>
+        <pre>
+          <code>
+            if (coffeeMade) {
+              return "Coffee is ready! Time to drink coffee.";
+          } else {
+              return "No coffee yet. Time to make some coffee.";
+          }
+          </code>
+        </pre>
+        
+        <p>
+          In the event that the coffee needs to be made, the first thing I will need to do is grind the beans.
+          
+          So, after pouring my beans into the grinder, I need to turn the grinder crank until the beans are all ground up.
+          
+          But unless I recognize that the beans have been all ground up, I might accidentally turn the grinder crank until the heat death of the universe, which would not be an effective use of my time, and critically, I’ll never actually get to drink my coffee. <br><br>
+          
+          So in code, this is where a LOOP is useful. <br> <br>
+          
+          A loop lets you cycle through an action either a set or dynamic number of times before continuing with the rest of the code.
+          
+          For the coffee, I want to turn the crank until all the coffee is ground. Once all the coffee is ground, I can stop and continue with the rest of my coffee-making ritual.
+          
+          In JavaScript, that might look like this: <br><br><br>
+          
+          — In trying to write this example in code, I realize I have actually created a far more complex loop than I anticipated. <br><br>
+          
+          So let’s just imagine that I already know that grinding my beans takes exactly 10 cranks.
+          
+          Therefore…
+          
+        </p>
+
+        <pre>
+          <code>
+            for (let crank = 0; crank &lt;= totalCranksNeeded; crank++) {
+              let totalCranksNeeded = 10;
+                    console.log(`Crank ${crank}: Grinding...`);
+                }
+            
+                return “All beans are ground. Ready for brewing!";
+            }
+          </code>
+        </pre>
+
+          <h2>
+            want the DOM is and how you might interact with it?
+          </h2>
+          
+          <p>
+            The DOM is like a tree map detailing everything on a webpage and how each item relates to the others. <br> <br>
+            
+            JavaScript can be used to manipulate this ‘tree map’ and all the content within. <br> <br>
+            
+            Using JavaScript to manipulate the DOM means a website could include a text entry field where that text is then added to the webpage.
+            
+            This means anything the user of the website wants can be dynamically added to the site.
+          </p>
+          
+          
+          <h2>
+            The difference between arrays and objects.
+          </h2>
+          <p>Objects and Arrays are two different ways to structure and store data.<br> <br>
+            An array is an ordered list. It might look like this: <br> <br> [1, 2, 3].<br> <br>
+            The defining use behind an array is that each number is in a specific position. The 1 comes first, the 2 is next, and the 3 after that. An array can be made up of anything (even objects); the critical point is that items in an array stay in order and can be counted upon to be in order.</p>
+            
+            <p>An object structures data in a different way. This is best thought of as a Dictionary.<br>
+              In a dictionary, each word has a definition. In an Object, each Key has a Value (although the value can be empty).<br>
+              So in the dictionary, the word is the key, and the value is the definition.
+              
+            </p>
+            
+            <p>Objects are great for storing sets of similar data.<br>
+              A personal contact book is a great example of an Object. Each contact is like an object. Each contact has a name and a phone number. <br> <br>
+              which would look like this: <br><br>
+              
+              name: Rowan, <br>
+              number: 0277409816
+            </p> 
+            
+            <p>The 'name' and 'number' are the keys. They are the same across each contact in the book. The piece of data that is different is the value that each key is paired with.</p>
+            
+            <p>In this way, when you open your contact book (if you’re 500 years old) and turn to any random page, you know that the phone number is the value paired with the key 'Phone Number'.</p>
+            
+            
+          </div>
+
+          <h2>
+            Why are functions useful?
+          </h2>
+            <p>A function is a reusable bit of code.<br> <br>
+              Write once, run it as many times as you like without endless rewriting.</p>
+          <div>   
+            <h4 class="footer">Copyright Rowan Strang 2024</h3>
+      </body>
+      </html>
+    </div>

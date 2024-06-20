@@ -127,6 +127,13 @@ p {
   margin-right: 50px;
 }
 
+pre code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  font-size: medium;
+}
+
 @media (max-width: 600px) {
   h1 {
     margin-bottom: 10px;
